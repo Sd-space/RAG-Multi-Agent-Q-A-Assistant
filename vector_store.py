@@ -9,5 +9,5 @@ def build_vector_store():
         raw = TextLoader(file).load()
         splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
         docs.extend(splitter.split_documents(raw))
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2",model_kwargs={"device": "cpu"})
+    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2",model_kwargs={"device": "cpu"},encode_kwargs={"normalize_embeddings": True})
     return FAISS.from_documents(docs, embeddings)
