@@ -8,7 +8,7 @@ from pydantic import PrivateAttr
 class OpenRouterChat(BaseChatModel):
     _client: OpenAI = PrivateAttr()
 
-    def __init__(self, api_key=None, base_url=None, **kwargs):
+    def __init__(self, api_key='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', base_url=None, **kwargs):
         super().__init__(**kwargs)
         api_key = api_key or os.getenv("OPENROUTER_API_KEY")
         base_url = base_url or "https://openrouter.ai/api/v1"
