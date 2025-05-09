@@ -5,3 +5,7 @@ streamlit
 sentence-transformers
 requests
 tiktoken
+torch
+torchaudio
+torchvision
+transformers
