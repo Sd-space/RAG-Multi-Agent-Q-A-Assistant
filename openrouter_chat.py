@@ -29,7 +29,7 @@ class OpenRouterChat(BaseChatModel):
         print("DEBUG: Formatted Messages:", formatted_messages)
         try:
             completion = self._client.chat.completions.create(
-                model="openai/gpt-3.5-turbo-0613",
+                model="https://openrouter.ai/openai/gpt-4.1",
                 messages=formatted_messages,
                 extra_headers={
                     "HTTP-Referer": "https://your-site.com",
