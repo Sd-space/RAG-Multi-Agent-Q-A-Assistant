@@ -35,3 +35,10 @@ Place your `.txt` documents inside the `data/` folder.
 
 ## 📸 Screenshots
 ![alt text](image-1.png)
+
+## Deployments
+Streamlit Link:- https://rag-multi-agent-q-a-assistant-okoegbtpytatmespksfomu.streamlit.app/
+
+## Contact
+Author:- Sd-space 
+Contact:-ssrvdd@gmail.com
